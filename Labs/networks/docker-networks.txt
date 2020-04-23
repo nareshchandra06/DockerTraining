@@ -121,3 +121,9 @@ Host vs. Ingress
 	  
 	  publish a service port host mode:
 	    docker service create -p mode=host,published=8082,target=80 --name nginx_host_pub nginx
+===========================================================================
+
+docker run -itd --name spacebones 5f9cfb85ce71 /bin/bash 
+
+docker run -itd --name treatlist --link 6fa973bb3c26 -P /bin/bash 
+
