@@ -76,6 +76,8 @@ Managing Networks:
        docker network create NETWORK ( create a bridge network by default )   
        docker network create --driver bridge NETWORK
        docker network create --driver overlay NETWORK
+       docker network create --driver=bridge --subnet=192.168.10.0/24 --gateway=192.168.10.250 borkspace
+       
        docker network inspect NETWORK
        docker network rm NETWORK 
 	   
