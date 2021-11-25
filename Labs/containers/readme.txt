@@ -28,6 +28,9 @@ how to run containers from a docker image
 	docker rm -f <container id> -- to remove a container forcefully though it is in running state 
 	docker container prune -- to remove all stopped/exited containers
 	
+	docker rm -f $(docker ps -a -q) --remove all containers both running and not running state
+	docker rmi $(docker images -q) --remove all the existing images
+	
 how to get inside a running container
 
 	docker run -d nginx ( creates a new container in detached mode )
